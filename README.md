@@ -1,38 +1,34 @@
-# CarePoint Clinic — GitHub Pages
+# ARRAKIS — The Desert Planet
 
-A sample medical website ready to publish on GitHub Pages.
+A fan-made Dune-themed website built with plain HTML, CSS, and JavaScript.
 
-## Files
+## Features
 
-- `index.html` — main page (hero, services, doctors, about, contact form)
-- `styles.css` — styling (responsive, mobile nav included)
-- `script.js` — mobile nav toggle, demo form handler, dynamic footer year
+- **Hero section** with animated sand particles and atmospheric desert glow
+- **Spice Melange** — info cards on life extension, prescience, and navigation
+- **Great Houses** — interactive tabbed panels for House Atreides, Harkonnen, and Corrino
+- **The Fremen** — desert people stats and culture
+- **The Prophecy** — scrollable timeline from the Assignment to the Emergence
+- **Litany Against Fear** quote block
+- **Footer CTA** with newsletter-style form
+- **Scroll reveal** animations via IntersectionObserver
+- Fully **responsive** with mobile hamburger navigation
 
-## Publish to GitHub Pages
+## Tech Stack
 
-1. Create a new repository on GitHub (e.g. `med-site`).
-2. Push these files to the `main` branch:
+- Vanilla HTML5 / CSS3 / JavaScript — no build tools required
+- Google Fonts: Cinzel (display) + Inter (body)
+- CSS custom properties for easy theming
 
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: medical site"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/med-site.git
-   git push -u origin main
-   ```
+## Run Locally
 
-3. On GitHub, go to **Settings → Pages**.
-4. Under **Build and deployment → Source**, select **Deploy from a branch**.
-5. Choose branch `main` and folder `/ (root)`, then **Save**.
-6. Wait a minute — your site will be live at:
+Open `index.html` in any browser, or serve with:
 
-   ```
-   https://<your-username>.github.io/med-site/
-   ```
+```bash
+python3 -m http.server 8000
+# → http://localhost:8000
+```
 
-## Customize
+## Deployed
 
-- Edit text directly in `index.html`.
-- Change colors in `styles.css` under `:root` (CSS variables).
-- Replace the demo form handler in `script.js` with a real backend or a form service (e.g. Formspree).
+Live at: https://serbaut.github.io/dune/

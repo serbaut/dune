@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CarePoint Clinic — compassionate, modern healthcare for you and your family." />
-  <title>CarePoint Clinic — Modern Healthcare</title>
+  <meta name="description" content="ARRAKIS — The Desert Planet. Experience the world of Dune: spice, sandworms, and the path of the Lisan al-Gaib." />
+  <title>ARRAKIS — The Desert Planet</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#top">Care<span>Point</span></a>
+      <a class="logo" href="#top">ARRAKIS</a>
       <nav class="main-nav" id="mainNav">
-        <a href="#services">Services</a>
-        <a href="#doctors">Doctors</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#spice">Spice</a>
+        <a href="#houses">Houses</a>
+        <a href="# Fremen">Fremen</a>
+        <a href="#prophecy">Prophecy</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -24,128 +24,198 @@
   </header>
 
   <main id="top">
+    <!-- Hero -->
     <section class="hero">
+      <div class="sand-particles" id="sandParticles"></div>
       <div class="container hero-inner">
-        <h1>Compassionate care,<br />modern medicine.</h1>
-        <p>From routine checkups to specialized treatment, CarePoint Clinic puts your health first — with same-day appointments and a team that listens.</p>
+        <p class="hero-eyebrow"> Planet Arrakis &nbsp;·&nbsp; 4th planet in the Canopus system</p>
+        <h1 class="hero-title">
+          <span class="line">THE DESERT</span>
+          <span class="line glow">PLANET</span>
+        </h1>
+        <p class="hero-quote">"A beginning is a very delicate time. Know then, that it is the year 10191. The known universe is ruled by the Padishah Emperor Shaddam IV..."</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Book an Appointment</a>
-          <a class="btn btn-outline" href="#services">Explore Services</a>
+          <a class="btn btn-spice" href="#prophecy">Begin the Journey</a>
+          <a class="btn btn-outline" href="#spice">Discover the Spice</a>
         </div>
       </div>
+      <div class="hero-scroll" aria-hidden="true">SCROLL ↓</div>
     </section>
 
-    <section id="services" class="section">
+    <!-- Spice section -->
+    <section id="spice" class="section spice-section">
       <div class="container">
-        <h2>Our Services</h2>
-        <p class="section-sub">Comprehensive care under one roof.</p>
+        <div class="section-label">— Substance —</div>
+        <h2 class="section-title">The Spice <span class="accent">Melange</span></h2>
+        <p class="section-lead">The most valuable substance in the universe. Found only on Arrakis, the spice extends life, expands consciousness, and is vital to interstellar travel.</p>
         <div class="card-grid">
-          <article class="card">
-            <h3>Primary Care</h3>
-            <p>Annual physicals, preventive screenings, and ongoing management of chronic conditions.</p>
+          <article class="card spice-card">
+            <div class="card-icon">⏳</div>
+            <h3>Life Extension</h3>
+            <p>Regular consumption of the spice can extend human lifespan by centuries and enhance vitality.</p>
           </article>
-          <article class="card">
-            <h3>Pediatrics</h3>
-            <p>Gentle, family-centered care for infants, children, and adolescents at every stage.</p>
+          <article class="card spice-card">
+            <div class="card-icon">👁</div>
+            <h3>Prescience</h3>
+            <p>The spice grants limited prescience — the ability to see possible futures — a gift and a burden.</p>
           </article>
-          <article class="card">
-            <h3>Cardiology</h3>
-            <p>Heart health assessments, ECG, stress tests, and personalized treatment plans.</p>
+          <article class="card spice-card">
+            <div class="card-icon">🚀</div>
+            <h3>Space Navigation</h3>
+            <p>Navigator Guild Heighliners rely on spice-driven prescience to fold space and travel between stars.</p>
           </article>
-          <article class="card">
-            <h3>Dermatology</h3>
-            <p>Skin exams, acne and eczema treatment, and skin cancer screening.</p>
-          </article>
-          <article class="card">
-            <h3>Mental Health</h3>
-            <p>Confidential counseling, therapy, and psychiatric services for all ages.</p>
-          </article>
-          <article class="card">
-            <h3>Telehealth</h3>
-            <p>Secure video visits from the comfort of your home — available 7 days a week.</p>
-          </article>
+        </div>
+        <div class="spice-warning">
+          <span class="warn-icon">⚠</span>
+          <p><strong>Warning:</strong> Spice withdrawal is fatal. The substance creates total physical and psychological dependence. Control the spice, control the universe.</p>
         </div>
       </div>
     </section>
 
-    <section id="doctors" class="section section-alt">
+    <!-- Houses section -->
+    <section id="houses" class="section houses-section">
       <div class="container">
-        <h2>Meet Our Doctors</h2>
-        <p class="section-sub">Experienced specialists dedicated to your well-being.</p>
-        <div class="card-grid">
-          <article class="card doctor-card">
-            <div class="avatar" aria-hidden="true">DR</div>
-            <h3>Dr. Dana Rivera</h3>
-            <p class="role">Primary Care Physician</p>
-            <p>15+ years in family medicine; believes prevention is the best prescription.</p>
+        <div class="section-label">— The Great Houses —</div>
+        <h2 class="section-title">Noble <span class="accent">Families</span></h2>
+        <p class="section-lead">The Imperium is a web of political intrigue, feudal obligation, and dynastic ambition.</p>
+
+        <div class="house-tabs" id="houseTabs">
+          <button class="house-tab active" data-house="atreides">House Atreides</button>
+          <button class="house-tab" data-house="harkonnen">House Harkonnen</button>
+          <button class="house-tab" data-house="corrino">House Corrino</button>
+        </div>
+
+        <div class="house-panels" id="housePanels">
+          <article class="house-panel active" data-house="atreides">
+            <div class="house-emblem">🦅</div>
+            <h3>House Atreides</h3>
+            <p class="house-motto">"Here I am, here I remain."</p>
+            <p>Ruled by Duke Leto Atreides, House Atreides is known for honor, justice, and loyalty among the Great Houses. Their fief on the ocean planet Caladan is a paradise of rain and greenery — a stark contrast to Arrakis, where the Emperor has assigned them the dangerous task of spice harvesting.</p>
+            <ul class="house-facts">
+              <li><strong>Seat:</strong> Caladan (formerly)</li>
+              <li><strong>Leader:</strong> Duke Leto Atreides I</li>
+              <li><strong>Sigil:</strong> Red hawk on green field</li>
+              <li><strong>Trait:</strong> Honor and integrity</li>
+            </ul>
           </article>
-          <article class="card doctor-card">
-            <div class="avatar" aria-hidden="true">JO</div>
-            <h3>Dr. James Okafor</h3>
-            <p class="role">Cardiologist</p>
-            <p>Board-certified cardiologist focused on preventive heart health.</p>
+
+          <article class="house-panel" data-house="harkonnen">
+            <div class="house-emblem">🐏</div>
+            <h3>House Harkonnen</h3>
+            <p class="house-motto">"Fear is the mind-killer."</p>
+            <p>The Harkonnen dynasty, led by the grotesquely obese Baron Vladimir Harkonnen, thrives on cruelty, exploitation, and treachery. Their homeworld of Giedi Prime is an industrial wasteland of pollution and slave labor. For generations, they have been the bitter enemies of House Atreides.</p>
+            <ul class="house-facts">
+              <li><strong>Seat:</strong> Giedi Prime</li>
+              <li><strong>Leader:</strong> Baron Vladimir Harkonnen</li>
+              <li><strong>Sigil:</strong> Black ram on yellow field</li>
+              <li><strong>Trait:</strong> Cruelty and greed</li>
+            </ul>
           </article>
-          <article class="card doctor-card">
-            <div class="avatar" aria-hidden="true">LM</div>
-            <h3>Dr. Lena Moreau</h3>
-            <p class="role">Pediatrician</p>
-            <p>Passionate about making every child's visit comfortable and stress-free.</p>
+
+          <article class="house-panel" data-house="corrino">
+            <div class="house-emblem">🦁</div>
+            <h3>House Corrino</h3>
+            <p class="house-motto">"The throne is earned by blood."</p>
+            <p>The Corrino family has ruled the known universe for over 10,000 years since the Butlerian Jihad. Padishah Emperor Shaddam IV sits on the Golden Lion Throne, but his power is balanced — and threatened — by the Landsraad of Great Houses and the Spacing Guild.</p>
+            <ul class="house-facts">
+              <li><strong>Seat:</strong> Kaitain</li>
+              <li><strong>Leader:</strong> Padishah Emperor Shaddam IV</li>
+              <li><strong>Sigil:</strong> Golden lion</li>
+              <li><strong>Trait:</strong> Political cunning</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container about-inner">
-        <h2>About CarePoint</h2>
-        <p>Founded in 2012, CarePoint Clinic has grown from a small family practice into a full-service medical center serving over 20,000 patients. Our mission is simple: deliver high-quality, affordable healthcare with a human touch.</p>
-        <ul class="stats">
-          <li><strong>20k+</strong><span>Patients served</span></li>
-          <li><strong>12</strong><span>Specialists</span></li>
-          <li><strong>4.9★</strong><span>Patient rating</span></li>
-        </ul>
+    <!-- Fremen section -->
+    <section id="fremen" class="section fremen-section">
+      <div class="container fremen-inner">
+        <div class="section-label">— The Desert People —</div>
+        <h2 class="section-title">The <span class="accent">Fremen</span></h2>
+        <p class="section-lead">The native people of Arrakis. Freedmen who have survived the desert for millennia, the Fremen are fierce warriors, expert water conservationists, and deeply spiritual people who await the coming of the Lisan al-Gaib — the voice from the outer world who will lead them to paradise.</p>
+        <div class="fremen-grid">
+          <div class="fremen-stat">
+            <span class="stat-number">0.3</span>
+            <span class="stat-label">liters of water lost per day to be reclaimed</span>
+          </div>
+          <div class="fremen-stat">
+            <span class="stat-number">20</span>
+            <span class="stat-label">years a Stillsuit can last with proper maintenance</span>
+          </div>
+          <div class="fremen-stat">
+            <span class="stat-number">35M</span>
+            <span class="stat-label">estimated Fremen population on Arrakis</span>
+          </div>
+          <div class="fremen-stat">
+            <span class="stat-number">1</span>
+            <span class="stat-label">world in the universe where water is more precious than gold</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section section-alt">
-      <div class="container contact-inner">
-        <h2>Book an Appointment</h2>
-        <p class="section-sub">We typically respond within one business day.</p>
-        <form class="contact-form" id="contactForm">
-          <div class="form-row">
-            <label for="name">Full name</label>
-            <input type="text" id="name" name="name" required />
+    <!-- Prophecy section -->
+    <section id="prophecy" class="section prophecy-section">
+      <div class="container">
+        <div class="section-label">— The Lisan al-Gaib —</div>
+        <h2 class="section-title">The <span class="accent">Prophecy</span></h2>
+        <div class="prophecy-timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>The Assignment</h4>
+              <p>Emperor Shaddam IV transfers control of Arrakis from House Harkonnen to House Atreides — a trap disguised as an honor.</p>
+            </div>
           </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>The Betrayal</h4>
+              <p>The Sardaukar, disguised as Harkonnen troops, storm Arrakeen. Duke Leto is betrayed by his own physician, Dr. Yueh, and killed.</p>
+            </div>
           </div>
-          <div class="form-row">
-            <label for="service">Service</label>
-            <select id="service" name="service">
-              <option>Primary Care</option>
-              <option>Pediatrics</option>
-              <option>Cardiology</option>
-              <option>Dermatology</option>
-              <option>Mental Health</option>
-              <option>Telehealth</option>
-            </select>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>The Desert</h4>
+              <p>Paul Atreides and Lady Jessica flee into the deep desert, where they encounter the Fremen of Sietch Tabr. Paul must prove himself among the desert's harshest warriors.</p>
+            </div>
           </div>
-          <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4"></textarea>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>The Emergence</h4>
+              <p>Paul Atreides becomes Muad'Dib, unites the Fremen, and leads a revolution that will shake the foundations of the known universe. The spice must flow.</p>
+            </div>
           </div>
-          <button type="submit" class="btn btn-primary">Request Appointment</button>
-          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </div>
+        <blockquote class="prophecy-quote">
+          <p>"I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me..."</p>
+          <cite>— The Litany Against Fear, Bene Gesserit</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+      <div class="container">
+        <h2>Join the <span class="accent">Journey</span></h2>
+        <p>The spice must flow. Subscribe to receive intelligence from the edge of the known universe.</p>
+        <form class="cta-form" id="ctaForm">
+          <input type="email" id="ctaEmail" placeholder="your@spice.mail" required />
+          <button type="submit" class="btn btn-spice">Subscribe</button>
         </form>
+        <p class="cta-status" id="ctaStatus" role="status" aria-live="polite"></p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> CarePoint Clinic. All rights reserved.</p>
-      <p class="footer-note">123 Wellness Avenue, Springfield · (555) 123-4567 · hello@carepoint.example</p>
+      <p class="footer-logo">ARRAKIS</p>
+      <p class="footer-note">A fan-made tribute to Frank Herbert's <em>Dune</em> universe. Not affiliated with or endorsed by the Herbert estate or Legendary Pictures.</p>
+      <p class="footer-copy">&copy; <span id="year"></span> &nbsp;·&nbsp; "Fear is the mind-killer."</p>
     </div>
   </footer>
 
