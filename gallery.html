@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Visions of Arrakis — Original Dune-inspired artwork featuring Shai-Hulud breaching beneath the twin moons, with a Fremen sandrider." />
+  <title>Visions of Arrakis — Gallery & Dune Artwork</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html#top">ARRAKIS</a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="index.html#spice">Spice</a>
+        <a href="index.html#houses">Houses</a>
+        <a href="index.html#fremen">Fremen</a>
+        <a href="index.html#prophecy">Prophecy</a>
+        <a href="gallery.html" class="active">Gallery</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Gallery Hero -->
+    <section class="gallery-hero">
+      <div class="container">
+        <p class="hero-eyebrow">Deep Desert Visions &nbsp;·&nbsp; Sector 4B Southern Erg</p>
+        <h1 class="section-title">Visions of <span class="accent">Arrakis</span></h1>
+        <p class="gallery-lead">
+          An artistic tribute to Frank Herbert's desert epic. Witness <strong>Shai-Hulud</strong> erupting from the shifting sands beneath the twin moons, summoned by the rhythmic pulse of a Fremen thumper.
+        </p>
+
+        <!-- Artwork Frame -->
+        <div class="artwork-frame-container">
+          <div class="artwork-wrapper" id="artworkContainer">
+            <img
+              src="assets/images/shai-hulud-dune.svg"
+              alt="Dune illustration depicting Shai-Hulud emerging from sand dunes beneath the twin moons with a Fremen warrior holding maker hooks"
+              class="artwork-img"
+            />
+          </div>
+
+          <!-- Artwork Controls & Meta Info -->
+          <div class="artwork-toolbar">
+            <div class="artwork-tags">
+              <span class="art-tag">🪐 The Deep Erg</span>
+              <span class="art-tag">🌙 The Twin Moons (Muad'Dib &amp; Krelln)</span>
+              <span class="art-tag">🐛 Shai-Hulud (~400m)</span>
+              <span class="art-tag">🪝 Fremen Sandrider</span>
+              <span class="art-tag">🛸 Patrol Ornithopter</span>
+            </div>
+            <div class="artwork-buttons">
+              <button type="button" class="btn btn-outline btn-sm" id="toggleGlowBtn">✨ Spice Glow</button>
+              <a href="assets/images/shai-hulud-dune.svg" target="_blank" rel="noopener noreferrer" class="btn btn-spice btn-sm">Full Size ↗</a>
+              <a href="assets/images/shai-hulud-dune.svg" download="shai-hulud-arrakis.svg" class="btn btn-outline btn-sm">Download SVG ↓</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lore Section -->
+    <section class="lore-section">
+      <div class="container">
+        <div class="section-label" style="text-align: center;">— Iconography —</div>
+        <h2 class="section-title" style="text-align: center;">Elements of the <span class="accent">Visions</span></h2>
+        <p class="section-lead" style="margin: 0 auto; text-align: center;">
+          Every detail woven into the scene draws directly from the ecology and folklore of Dune.
+        </p>
+
+        <div class="lore-grid">
+          <article class="lore-card">
+            <span class="lore-icon">🔥</span>
+            <h3>The Furnace Maw of Shai-Hulud</h3>
+            <p>
+              Deep within the maw of the sandworm burns an incandescent chemical fire. The friction of the worm's internal grinding gizzard and metabolic synthesis generates blinding amber heat and the precious substance melange.
+            </p>
+          </article>
+
+          <article class="lore-card">
+            <span class="lore-icon">🌙</span>
+            <h3>The Twin Moons &amp; Muad'Dib</h3>
+            <p>
+              Arrakis is crowned by two moons in its night sky. Upon the major moon rests the shadow of a kangaroo mouse, the creature of the desert whose adaptability and cunning inspired Paul Atreides' Fremen name.
+            </p>
+          </article>
+
+          <article class="lore-card">
+            <span class="lore-icon">🪝</span>
+            <h3>The Sandrider &amp; Maker Hooks</h3>
+            <p>
+              To mount the worm, a Fremen uses a thumper to summon it, waits upon a dune's knife-edge crest, and embeds dual maker hooks between its armor rings. The exposed soft flesh forces the worm to stay above the sand.
+            </p>
+          </article>
+
+          <article class="lore-card">
+            <span class="lore-icon">👁</span>
+            <h3>The Eyes of Ibad</h3>
+            <p>
+              Notice the glowing blue-within-blue gaze of the silhouetted warrior. Decades of consuming spice-infused bread, water, and air permanently stains the entire eyeball — the indelible mark of true Fremen blood.
+            </p>
+          </article>
+        </div>
+
+        <blockquote class="gallery-quote">
+          <p>"Bless the Maker and His water. Bless the coming and going of Him. May His passage cleanse the world. May He keep the world for His people."</p>
+          <cite>— Ancient Fremen Benediction</cite>
+        </blockquote>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="index.html" class="btn btn-spice">Return to Arrakis Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">ARRAKIS</p>
+      <p class="footer-note">A fan-made tribute to Frank Herbert's <em>Dune</em> universe. Not affiliated with or endorsed by the Herbert estate or Legendary Pictures.</p>
+      <p class="footer-copy">&copy; <span id="year"></span> &nbsp;·&nbsp; "Fear is the mind-killer."</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
